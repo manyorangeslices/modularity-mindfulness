@@ -1,3 +1,9 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
 html {
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
@@ -24,4 +30,41 @@ body {
 img {
   display: block;
   width: 100%;
+}
+
+li {
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+.top {
+  display: grid;
+  grid-column: 1/ -1;
+  grid-row: 1;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.navigation {
+  display: grid;
+  grid-template-areas: "1 2";
+}
+
+.garden {
+  display: grid;
+  grid-column: 1/ -1;
+  grid-row: 1 / 2;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.buttons {
+  font-size: 1.125rem;
+  padding: .5rem 1rem .6rem;
+  color: #3783a3;
+  border: .2rem solid #3783a3;
+  border-radius: .3rem;
+  text-decoration: none;
+  display: inline-block;
+  margin: auto;
 }
